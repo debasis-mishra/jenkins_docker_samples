@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/sample-prog-on-running-docker-on-jenkins.jar running-docker-on-jenkins.jar
+ENTRYPOINT ["java","-jar","/running-docker-on-jenkins.jar"]
